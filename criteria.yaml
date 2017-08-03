@@ -1,7 +1,7 @@
 title: EthTrader ICO Review Criteria
 descrition: The following set of questions and criteria are intended for the evaluation of an ICO based on project legitimacy and viability. Any results or scoring is not intended as indication of future price performance.
 categories:
-  - category_name: Tech
+  - name: Tech
       criteria:
         - description: To what degree does the concept benefit from blockchain or smart contract functionality?
           multiplier: 1
@@ -17,7 +17,7 @@ categories:
           children:
             - Is there a prototype or proof of concept?
             - Is there a high level of activity in any github repo concerning the project?
-    - category_name: Token
+    - name: Token
       criteria:
         - description: How useful or necessary is the token?
           multiplier: 3
@@ -32,7 +32,7 @@ categories:
             - Built-in governance, project decision-making?
             - Control over release of funds?
             - Degree of dependence on company?
-    - category_name: Funding
+    - name: Funding
       criteria:
         - description: How is the project handling its funds?
           multiplier: 1
@@ -59,7 +59,7 @@ categories:
           max_score_100: 3
           children:
             - Is this cap reasonable with the goals they want to achieve? Is it congruent with their budget plan?
-    - category_name: Roadmap
+    - name: Roadmap
       criteria:
         - description: Clear and specific deadlines for the completion of various parts of the project?
           multiplier: 1
@@ -88,7 +88,7 @@ categories:
             - Has the company provided an analysis of legal issues presented?
             - Is there a significant legal risk to token holders or other actors?
             - Does the project have a identifiable legal representation?
-    - category_name: Team
+    - name: Team
       criteria:
         - description: Are the team members within the project reputable? 
           multiplier: 1
