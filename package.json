@@ -1,0 +1,26 @@
+{
+  "name": "ico-review",
+  "version": "0.0.1",
+  "description": "ico review criteria",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EthTrader/ico-review.git"
+  },
+  "keywords": [
+    "ico",
+    "review",
+    "criteria",
+    "ethereum",
+    "ethtrader"
+  ],
+  "author": "Carl Larson <cslarson@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EthTrader/ico-review/issues"
+  },
+  "homepage": "https://github.com/EthTrader/ico-review#readme"
+}
