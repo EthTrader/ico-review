@@ -1,0 +1,9 @@
+- category_name: Tech
+  criteria:
+    - description: To what degree does the concept benefit from blockchain or smart contract functionality?
+      multiplier: 1
+      max_score_100: 7
+- category_name: Token
+- category_name: Funding
+- category_name: Roadmap
+- category_name: Team
