@@ -3,7 +3,33 @@
     - description: To what degree does the concept benefit from blockchain or smart contract functionality?
       multiplier: 1
       max_score_100: 7
+    - description: Has the company published a whitepaper?
+      multiplier: 2
+      max_score_100: 13
+      children:
+        - Does the document contain high rate, well-reasoned, publishable content and tech; or is it largely subpar, amateur marketing “fluff”?
+    - description: How advanced are the development efforts?
+      multiplier: 1.5
+      max_score_100: 10
+      children:
+        - Is there a prototype or proof of concept?
+        - Is there a high level of activity in any github repo concerning the project?
 - category_name: Token
+  criteria:
+    - description: How useful or necessary is the token?
+      multiplier: 3
+      flaggable: true
+      max_score_100: 5
+      children:
+        - Could a competitor take the code and remove the token or replace with ether?
+  criteria:
+    - description: Do token holders retain influence over the project?
+      multiplier: 1
+      max_score_100: 5
+      children:
+        - Built-in governance, project decision-making?
+        - Control over release of funds?
+        - Degree of dependence on company?
 - category_name: Funding
 - category_name: Roadmap
 - category_name: Team
