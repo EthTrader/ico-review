@@ -2,105 +2,105 @@ title: EthTrader ICO Review Criteria
 descrition: The following set of questions and criteria are intended for the evaluation of an ICO based on project legitimacy and viability. Any results or scoring is not intended as indication of future price performance.
 categories:
   - name: Tech
-      criteria:
-        - description: To what degree does the concept benefit from blockchain or smart contract functionality?
-          multiplier: 1
-          max_score_100: 7
-        - description: Has the company published a whitepaper?
-          multiplier: 2
-          max_score_100: 13
-          children:
-            - Does the document contain high rate, well-reasoned, publishable content and tech; or is it largely subpar, amateur marketing “fluff”?
-        - description: How advanced are the development efforts?
-          multiplier: 1.5
-          max_score_100: 10
-          children:
-            - Is there a prototype or proof of concept?
-            - Is there a high level of activity in any github repo concerning the project?
-    - name: Token
-      criteria:
-        - description: How useful or necessary is the token?
-          multiplier: 3
-          flaggable: true
-          max_score_100: 5
-          children:
-            - Could a competitor take the code and remove the token or replace with ether?
-        - description: Do token holders retain influence over the project?
-          multiplier: 1
-          max_score_100: 5
-          children:
-            - Built-in governance, project decision-making?
-            - Control over release of funds?
-            - Degree of dependence on company?
-    - name: Funding
-      criteria:
-        - description: How is the project handling its funds?
-          multiplier: 1
-          max_score_100: 5
-          children:
-            - Are funds distributed over time and by approval of a token holder influenced governance structure? 
-            - Are the funds being held under proper control?
-            - How will funds be liquidated? what is in place to ensure plan is held?
-            - Is there a refund option towards contributors in the event of excess funds?
-        - description: If a wider token distribution is desired are reasonable steps being taken to achieve this?
-          multiplier: 1
-          max_score_100: 2
-          children:
-            - Would consolidation of token supply among whales be detrimental to the project?
-        - description: Have all measures been exhausted to ensure secure possession and distribution of funds and tokens? 
-          multiplier: 1
-          flaggable: true
-          max_score_100: 6
-          children:
-            - Has any relevant smart contract code been released well in advance of the token launch?
-            - Has a bug bounty been established to incentivise the discovery of exploits and bugs?
-        - description: What is the cap structure?
-          multiplier: 1
-          max_score_100: 3
-          children:
-            - Is this cap reasonable with the goals they want to achieve? Is it congruent with their budget plan?
-    - name: Roadmap
-      criteria:
-        - description: Clear and specific deadlines for the completion of various parts of the project?
-          multiplier: 1
-          max_score_100: 6
-        - description: Is there a complete and viable budget plan? 
-          multiplier: 1
-          max_score_100: 6
-          children:
-            - Where are the funds being allocated? Do these allocation of funds make sense and are the amounts reasonable figures?
-            - Is there an outlined compensation plan for employees that is reasonable?
-            - Does the company have well reasoned cash flow projections (when will they start making money)?
-        - description: What is the auditing and security detail?
-          multiplier: 1
-          max_score_100: 6
-          children:
-            - Is there a clearly defined designated round of audits in the roadmap from a reputable blockchain company or blockchain security entity?
-        - description: Is there a clear and well defined marketing plan?
-          multiplier: 1
-          max_score_100: 2
-          children:
-            - Is branding taken seriously? Is there a strong and well maintained social media presence?
-        - description: Has there been appropriate consideration of legal matters? 
-          multiplier: 1
-          max_score_100: 5
-          children:
-            - Has the company provided an analysis of legal issues presented?
-            - Is there a significant legal risk to token holders or other actors?
-            - Does the project have a identifiable legal representation?
-    - name: Team
-      criteria:
-        - description: Are the team members within the project reputable? 
-          multiplier: 1
-          max_score_100: 6
-          children:
-            - Have they been active in the blockchain community?
-        - description: Does the team have a history of successful previous projects and/or pedigree?
-          multiplier: 1
-          max_score_100: 7
-        - description: Is the team present and responsive in prominent communications channels: Slack/Subreddit/Website/podcasts/etc?
-          multiplier: 1
-          max_score_100: 5
-        - description: Does the team currently have the core staff it needs (i.e. solidity developers, marketers, legal, community managers, etc.) to carry out this project or does it need to make substantial additions?
-          multiplier: 1
-          max_score_100: 2
+    criteria:
+      - description: To what degree does the concept benefit from blockchain or smart contract functionality?
+        multiplier: 1
+        max_score_100: 7
+      - description: Has the company published a whitepaper?
+        multiplier: 2
+        max_score_100: 13
+        children:
+          - Does the document contain high rate, well-reasoned, publishable content and tech; or is it largely subpar, amateur marketing “fluff”?
+      - description: How advanced are the development efforts?
+        multiplier: 1.5
+        max_score_100: 10
+        children:
+          - Is there a prototype or proof of concept?
+          - Is there a high level of activity in any github repo concerning the project?
+  - name: Token
+    criteria:
+      - description: How useful or necessary is the token?
+        multiplier: 3
+        flaggable: true
+        max_score_100: 5
+        children:
+          - Could a competitor take the code and remove the token or replace with ether?
+      - description: Do token holders retain influence over the project?
+        multiplier: 1
+        max_score_100: 5
+        children:
+          - Built-in governance, project decision-making?
+          - Control over release of funds?
+          - Degree of dependence on company?
+  - name: Funding
+    criteria:
+      - description: How is the project handling its funds?
+        multiplier: 1
+        max_score_100: 5
+        children:
+          - Are funds distributed over time and by approval of a token holder influenced governance structure? 
+          - Are the funds being held under proper control?
+          - How will funds be liquidated? what is in place to ensure plan is held?
+          - Is there a refund option towards contributors in the event of excess funds?
+      - description: If a wider token distribution is desired are reasonable steps being taken to achieve this?
+        multiplier: 1
+        max_score_100: 2
+        children:
+          - Would consolidation of token supply among whales be detrimental to the project?
+      - description: Have all measures been exhausted to ensure secure possession and distribution of funds and tokens? 
+        multiplier: 1
+        flaggable: true
+        max_score_100: 6
+        children:
+          - Has any relevant smart contract code been released well in advance of the token launch?
+          - Has a bug bounty been established to incentivise the discovery of exploits and bugs?
+      - description: What is the cap structure?
+        multiplier: 1
+        max_score_100: 3
+        children:
+          - Is this cap reasonable with the goals they want to achieve? Is it congruent with their budget plan?
+  - name: Roadmap
+    criteria:
+      - description: Clear and specific deadlines for the completion of various parts of the project?
+        multiplier: 1
+        max_score_100: 6
+      - description: Is there a complete and viable budget plan? 
+        multiplier: 1
+        max_score_100: 6
+        children:
+          - Where are the funds being allocated? Do these allocation of funds make sense and are the amounts reasonable figures?
+          - Is there an outlined compensation plan for employees that is reasonable?
+          - Does the company have well reasoned cash flow projections (when will they start making money)?
+      - description: What is the auditing and security detail?
+        multiplier: 1
+        max_score_100: 6
+        children:
+          - Is there a clearly defined designated round of audits in the roadmap from a reputable blockchain company or blockchain security entity?
+      - description: Is there a clear and well defined marketing plan?
+        multiplier: 1
+        max_score_100: 2
+        children:
+          - Is branding taken seriously? Is there a strong and well maintained social media presence?
+      - description: Has there been appropriate consideration of legal matters? 
+        multiplier: 1
+        max_score_100: 5
+        children:
+          - Has the company provided an analysis of legal issues presented?
+          - Is there a significant legal risk to token holders or other actors?
+          - Does the project have a identifiable legal representation?
+  - name: Team
+    criteria:
+      - description: Are the team members within the project reputable? 
+        multiplier: 1
+        max_score_100: 6
+        children:
+          - Have they been active in the blockchain community?
+      - description: Does the team have a history of successful previous projects and/or pedigree?
+        multiplier: 1
+        max_score_100: 7
+      - description: 'Is the team present and responsive in prominent communications channels: Slack/Subreddit/Website/podcasts/etc?'
+        multiplier: 1
+        max_score_100: 5
+      - description: Does the team currently have the core staff it needs (i.e. solidity developers, marketers, legal, community managers, etc.) to carry out this project or does it need to make substantial additions?
+        multiplier: 1
+        max_score_100: 2
