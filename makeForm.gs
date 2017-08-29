@@ -4,7 +4,7 @@ function makeForm() {
   var data = JSON.parse(response.getContentText()); //
 
   // var name = prompt('What is the name of the ICO?');
-  var name = '!!!NAME!!!';
+  var name = SpreadsheetApp.getActiveSpreadsheet().getName();
 
   var form = FormApp.create(data.form_title_template.replace('%%NAME%%', name));
   form.setDescription(data.form_description_template.replace('%%NAME%%', name));
