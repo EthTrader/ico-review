@@ -1,7 +1,7 @@
 title: EthTrader ICO Review Criteria
 description: The following set of questions and criteria are intended for the evaluation of an ICO based on project legitimacy and viability. Any results or scoring is not intended as indication of future price performance.
-formTitle: '%%NAME%%: EthTrader ICO Review'
-formDescription: |-
+form_title_template: '%%NAME%%: EthTrader ICO Review'
+form_description_template: |-
   Welcome to the %%NAME%% Ethtrader ICO Review form.
   This form is a set of questions to review the legitimacy and enforce greater standards on ICOs.
 
