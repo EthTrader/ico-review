@@ -4,7 +4,8 @@
   "description": "ico review criteria",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create_json": "js-yaml criteria.yaml > out/criteria.json"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/EthTrader/ico-review/issues"
   },
-  "homepage": "https://github.com/EthTrader/ico-review#readme"
+  "homepage": "https://github.com/EthTrader/ico-review#readme",
+  "dependencies": {
+    "js-yaml": "^3.9.1"
+  }
 }
