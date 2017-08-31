@@ -5,9 +5,15 @@ function makeForm() {
 
   // var name = prompt('What is the name of the ICO?');
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = spreadsheet.getSheets()[0];
+  var sheet = spreadsheet.getSheetByName("Details");
+  if(!sheet) sheet = spreadsheet.getSheetByName("Sheet1");
+
+  if(!sheet) throw new Error("No sheet named Details or Sheet1");
+  // var sheet = spreadsheet.getSheets()[0];
   // var name = SpreadsheetApp.getActiveSpreadsheet().getName();
   var name = sheet.getRange("A1").getValue();
+  if(!name) throw new Error("Please put the ICO name in A1 of a sheet named Details or Sheet1");
+
   var url = sheet.getRange("A2").getValue();
 
   var form = FormApp.create(data.form_title_template.replace('%%NAME%%', name));
