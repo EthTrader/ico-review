@@ -7,7 +7,7 @@ Following [a post](https://www.reddit.com/r/ethtrader/comments/6o2duw/eth_trader
 
 #### Create a new ICO Review Form
 
-Start a new google spreadsheet. Put the name of the ICO in **A1** (eg. 0x) and the url for the ICO in **A2**. Then go to `Tools > Script editor` and paste in the contents of [the `makeForm.gs` script](makeForm.gs). Run the script and you will have auto-created a new google form which you can share on [EthTrader](https://www.reddit.com/r/ethtrader/) to request reviews of the ICO.
+Start a new google spreadsheet. Put the name of the ICO in **A1** (eg. 0x) and the url for the ICO in **A2** and leave the name of that sheet either **Sheet1** or rename it to **Details**. Then go to `Tools > Script editor` and paste in the contents of [the `makeForm.gs` script](makeForm.gs). Run the script and you will have auto-created a new google form which you can share on [EthTrader](https://www.reddit.com/r/ethtrader/) to request reviews of the ICO.
 
 #### Contribute
 
