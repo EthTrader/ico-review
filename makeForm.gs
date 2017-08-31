@@ -4,11 +4,16 @@ function makeForm() {
   var data = JSON.parse(response.getContentText()); //
 
   // var name = prompt('What is the name of the ICO?');
-  var name = SpreadsheetApp.getActiveSpreadsheet().getName();
+  var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = spreadsheet.getSheets()[0];
+  // var name = SpreadsheetApp.getActiveSpreadsheet().getName();
+  var name = sheet.getRange("A1").getValue();
+  var url = sheet.getRange("A2").getValue();
 
   var form = FormApp.create(data.form_title_template.replace('%%NAME%%', name));
-  form.setDescription(data.form_description_template.replace('%%NAME%%', name));
+  form.setDescription(data.form_description_template.replace('%%NAME%%', name)).replace('%%URL%%', url));
   form.setConfirmationMessage('Thanks for reviewing the ' + name + ' ICO!');
+  form.setDestination(FormApp.DestinationType.SPREADSHEET, SpreadsheetApp.getActiveSpreadsheet().getId());
 
   var isVerifiedItem = form.addMultipleChoiceItem().setRequired(true);
 

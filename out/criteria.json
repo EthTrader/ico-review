@@ -2,7 +2,7 @@
   "title": "EthTrader ICO Review Criteria",
   "description": "The following set of questions and criteria are intended for the evaluation of an ICO based on project legitimacy and viability. Any results or scoring is not intended as indication of future price performance.",
   "form_title_template": "%%NAME%%: EthTrader ICO Review",
-  "form_description_template": "Welcome to the %%NAME%% Ethtrader ICO Review form.\nThis form is a set of questions to review the legitimacy and enforce greater standards on ICOs.\n\nThere are 5 categories: Tech, Token, Funding, Roadmap, and Team. Please rate the considerations under each category on a scale of 1-5.\n\nThis form was built thanks to the help of the ICO Review Service Team. You can join us at:\nhttps://join.slack.com/t/icoreview/shared_invite/MjEzNzQ4MjY0ODgwLTE1MDAzOTk2MjItMDk3Yjg4M2RkOQ\nThe code and instructions for auto-generating this form can be found at the official repo:\nhttps://github.com/EthTrader/ico-review",
+  "form_description_template": "Welcome to the %%NAME%% Ethtrader ICO Review form. Details for this ICO can be found at %%URL%%.\nThis form is a set of questions to review the legitimacy and enforce greater standards on ICOs.\n\nThere are 5 categories: Tech, Token, Funding, Roadmap, and Team. Please rate the considerations under each category on a scale of 1-5.\n\nThis form was built thanks to the help of the ICO Review Service Team. You can join us at:\nhttps://join.slack.com/t/icoreview/shared_invite/MjEzNzQ4MjY0ODgwLTE1MDAzOTk2MjItMDk3Yjg4M2RkOQ\nThe code and instructions for auto-generating this form can be found at the official repo:\nhttps://github.com/EthTrader/ico-review",
   "categories": [
     {
       "name": "Tech",
