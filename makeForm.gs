@@ -8,18 +8,45 @@ function makeForm() {
 
   var form = FormApp.create(data.form_title_template.replace('%%NAME%%', name));
   form.setDescription(data.form_description_template.replace('%%NAME%%', name));
-  form.setCollectEmail(true);
+
+  var isVerifiedItem = form.addMultipleChoiceItem().setRequired(true);
+
+  var pages = [];
 
   data.categories.forEach(function(category){
-    var section = form.addSectionHeaderItem();
-    section.setTitle(category.name);
+    var page = form.addPageBreakItem().setTitle(category.name);
+    pages.push(page);
+    // var section = form.addSectionHeaderItem();
+    // section.setTitle(category.name);
     category.criteria.forEach(function(criteria){
-      var item = form.addScaleItem();
       var description = criteria.description;
       if (criteria.children) description += ' ' + criteria.children.join(' ');
-      item.setTitle(criteria.title)
-      .setHelpText(criteria.description)
-      .setBounds(1, 5);
+      form
+        .addScaleItem()
+        .setTitle(criteria.title)
+        .setHelpText(description)
+        .setBounds(1, 5)
+        .setRequired(true);
     });
   });
+  // form.setCollectEmail(true);
+
+  var verifiedReviewerPage = form.addPageBreakItem().setTitle('Reviewer verification');
+
+  form
+    .addTextItem()
+    .setTitle('Please submit your EthTrader username.')
+
+  form
+    .addTextItem()
+    .setTitle('Please submit a verification message.')
+    .setHelpText('Choose a random string (eg. from http://www.passwordrandom.com/query?command=password) and paste it here and also as a comment response to the appropriate top level comment in the ICO review request thread (the EthTrader post that published the link to this form).');
+
+
+  isVerifiedItem
+    .setTitle('Do you want to be a verified reviewer?')
+    .setChoices([
+      isVerifiedItem.createChoice('Yes', verifiedReviewerPage),
+      isVerifiedItem.createChoice('No', pages[0])
+    ]);
 }

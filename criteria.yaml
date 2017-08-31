@@ -5,8 +5,12 @@ form_description_template: |-
   Welcome to the %%NAME%% Ethtrader ICO Review form.
   This form is a set of questions to review the legitimacy and enforce greater standards on ICOs.
 
-  This form was built thanks to the help of the ICO Review Service Team which you can join here:
+  There are 5 categories: Tech, Token, Funding, Roadmap, and Team. Please rate the considerations under each category on a scale of 1-5. 
+
+  This form was built thanks to the help of the ICO Review Service Team. You can join us at:
   https://join.slack.com/t/icoreview/shared_invite/MjEzNzQ4MjY0ODgwLTE1MDAzOTk2MjItMDk3Yjg4M2RkOQ
+  The code and instructions for auto-generating this form can be found at the official repo:
+  https://github.com/EthTrader/ico-review
 categories:
   - name: Tech
     criteria:
