@@ -14,6 +14,7 @@ function makeForm() {
   form.setDescription(data.form_description_template.replace('%%NAME%%', name).replace('%%URL%%', url));
   form.setConfirmationMessage('Thanks for reviewing the ' + name + ' ICO!');
   form.setDestination(FormApp.DestinationType.SPREADSHEET, SpreadsheetApp.getActiveSpreadsheet().getId());
+  form.setShowLinkToRespondAgain(false);
 
   var isVerifiedItem = form.addMultipleChoiceItem().setRequired(true);
 
