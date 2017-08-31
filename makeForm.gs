@@ -48,7 +48,8 @@ function makeForm() {
   });
 
   isVerifiedItem
-    .setTitle('Do you want to be a verified reviewer?')
+    .setTitle('Would you like to be a verified reviewer?')
+    .setHelpText('Review score aggregation will result in two final scores: one from all reviewers and another from verified reviewers only.')
     .setChoices([
       isVerifiedItem.createChoice('Yes', verifiedReviewerPage),
       isVerifiedItem.createChoice('No', pages[0])
