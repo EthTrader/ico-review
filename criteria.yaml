@@ -36,7 +36,7 @@ categories:
         description: How useful or necessary is the token?
         multiplier: 3
         flaggable: true
-        max_score_100: 5
+        max_score_100: 9
         children:
           - Could a competitor take the code and remove the token or replace with ether?
       - title: Token holder influence
@@ -117,7 +117,7 @@ categories:
       - title: Reputation
         description: Are the team members within the project reputable?
         multiplier: 1
-        max_score_100: 6
+        max_score_100: 8
         children:
           - Have they been active in the blockchain community?
           - Does the team have a history of successful projects?

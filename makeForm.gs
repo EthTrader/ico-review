@@ -33,7 +33,7 @@ function makeForm() {
 
   form
     .addTextItem()
-    .setTitle('Please submit a verification message.')
+    .setTitle('Please submit a verification code.')
     .setHelpText('Choose a random string (eg. from http://www.passwordrandom.com/query?command=password) and paste it here and also as a comment response to the appropriate top level comment in the ICO review request thread (the EthTrader post that published the link to this form).')
     .setRequired(true);
 
