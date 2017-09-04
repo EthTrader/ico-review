@@ -22,19 +22,19 @@ function makeForm() {
   form.setDestination(FormApp.DestinationType.SPREADSHEET, SpreadsheetApp.getActiveSpreadsheet().getId());
   form.setShowLinkToRespondAgain(false);
 
-  var isVerifiedItem = form.addMultipleChoiceItem().setRequired(true);
+  // var isVerifiedItem = form.addMultipleChoiceItem().setRequired(true);
+  //
+  // var verifiedReviewerPage = form.addPageBreakItem().setTitle('Reviewer verification');
 
-  var verifiedReviewerPage = form.addPageBreakItem().setTitle('Reviewer verification');
+  // form
+  //   .addTextItem()
+  //   .setTitle('Please submit your Reddit/EthTrader username.')
+  //   .setRequired(true)
 
   form
     .addTextItem()
-    .setTitle('Please submit your EthTrader username.')
-    .setRequired(true)
-
-  form
-    .addTextItem()
-    .setTitle('Please submit a verification code.')
-    .setHelpText('Choose a random string (eg. from http://www.passwordrandom.com/query?command=password) and paste it here and also as a comment response to the appropriate top level comment in the ICO review request thread (the EthTrader post that published the link to this form).')
+    .setTitle('Please submit a verification code. Also, see further instuctions below.')
+    .setHelpText('Choose a random string (eg. from http://www.passwordrandom.com/query?command=password) and paste it here and also as a comment response to the appropriate top level comment in the EthTrader ICO review post.')
     .setRequired(true);
 
   var pages = [];
@@ -54,11 +54,11 @@ function makeForm() {
     });
   });
 
-  isVerifiedItem
-    .setTitle('Would you like to be a verified reviewer?')
-    .setHelpText('Review score aggregation will result in two final scores: one from all reviewers and another from verified reviewers only.')
-    .setChoices([
-      isVerifiedItem.createChoice('Yes', verifiedReviewerPage),
-      isVerifiedItem.createChoice('No', pages[0])
-    ]);
+  // isVerifiedItem
+  //   .setTitle('Would you like to be a verified reviewer?')
+  //   .setHelpText('Review score aggregation will result in two final scores: one from all reviewers and another from verified reviewers only.')
+  //   .setChoices([
+  //     isVerifiedItem.createChoice('Yes', verifiedReviewerPage),
+  //     isVerifiedItem.createChoice('No', pages[0])
+  //   ]);
 }
