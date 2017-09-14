@@ -2,7 +2,7 @@
   "title": "EthTrader ICO Review Criteria",
   "description": "The following set of questions and criteria are intended for the evaluation of an ICO based on project legitimacy and viability. Any results or scoring is not intended as indication of future price performance.",
   "form_title_template": "%%NAME%%: EthTrader ICO Review",
-  "form_description_template": "Welcome to the %%NAME%% Ethtrader ICO Review form. Details for this ICO can be found at %%URL%%.\nThis form is a set of questions to review the legitimacy and encourage improved standards for ICOs.\n\nThere are 5 categories: Tech, Token, Funding, Roadmap, and Team. Please rate the considerations under each category on a scale of 1-5.\n\nThis form was built thanks to the help of the ICO Review Service Team. You can join us at:\nhttps://join.slack.com/t/icoreview/shared_invite/MjEzNzQ4MjY0ODgwLTE1MDAzOTk2MjItMDk3Yjg4M2RkOQ\nThe code and instructions for auto-generating this form can be found at the official repo:\nhttps://github.com/EthTrader/ico-review",
+  "form_description_template": "Welcome to the %%NAME%% Ethtrader ICO Review form. Details for this ICO can be found at %%URL%%.\nThis form is a set of questions to review the legitimacy and encourage improved standards for ICOs.\n\nThere are 5 categories: Tech, Token, Funding, Roadmap, and Team. Please rate the considerations under each category on a scale of 1-5.\n\nThis form was built thanks to the help of the ICO Review Service Team. Please pm u/carlslarson on Reddit with an email address for an invite to the Slack. We welcome all feedback.\n\nThe code and instructions for auto-generating this form can be found at the official repo:\nhttps://github.com/EthTrader/ico-review",
   "categories": [
     {
       "name": "Tech",
@@ -41,7 +41,7 @@
           "description": "How useful or necessary is the token?",
           "multiplier": 3,
           "flaggable": true,
-          "max_score_100": 5,
+          "max_score_100": 9,
           "children": [
             "Could a competitor take the code and remove the token or replace with ether?"
           ]
@@ -91,7 +91,8 @@
           "max_score_100": 6,
           "children": [
             "Has any relevant smart contract code been released well in advance of the token launch?",
-            "Has a bug bounty been established to incentivise the discovery of exploits and bugs?"
+            "Has a bug bounty been established to incentivise the discovery of exploits and bugs?",
+            "Have code auditing rounds been completed and published?"
           ]
         },
         {
@@ -126,15 +127,6 @@
           ]
         },
         {
-          "title": "Code audits",
-          "description": "What is the auditing and security detail?",
-          "multiplier": 1,
-          "max_score_100": 6,
-          "children": [
-            "Is there a clearly defined designated round of audits in the roadmap from a reputable blockchain company or blockchain security entity?"
-          ]
-        },
-        {
           "title": "Marketing",
           "description": "Is there a clear and well defined marketing plan?",
           "multiplier": 1,
@@ -163,7 +155,7 @@
           "title": "Reputation",
           "description": "Are the team members within the project reputable?",
           "multiplier": 1,
-          "max_score_100": 6,
+          "max_score_100": 8,
           "children": [
             "Have they been active in the blockchain community?",
             "Does the team have a history of successful projects?"
