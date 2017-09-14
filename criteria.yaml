@@ -72,6 +72,7 @@ categories:
         children:
           - Has any relevant smart contract code been released well in advance of the token launch?
           - Has a bug bounty been established to incentivise the discovery of exploits and bugs?
+          - Have code auditing rounds been completed and published?
       - title: Cap structure
         description: What is the cap structure?
         multiplier: 1
@@ -92,12 +93,6 @@ categories:
           - Where are the funds being allocated? Do these allocation of funds make sense and are the amounts reasonable figures?
           - Is there an outlined compensation plan for employees that is reasonable?
           - Does the company have well reasoned cash flow projections (when will they start making money)?
-      - title: Code audits
-        description: What is the auditing and security detail?
-        multiplier: 1
-        max_score_100: 6
-        children:
-          - Is there a clearly defined designated round of audits in the roadmap from a reputable blockchain company or blockchain security entity?
       - title: Marketing
         description: Is there a clear and well defined marketing plan?
         multiplier: 1
